@@ -5,192 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sea View Golf</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-      }
-
-      #nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #333;
-        color: white;
-        padding: 1rem;
-        font-size: 1.2rem;
-        flex-wrap: wrap;
-      }
-
-      #nav img {
-        max-width: 100px;
-      }
-
-      h4 {
-        margin: 0.5rem 0;
-      }
-
-      video {
-        width: 100%;
-        height: auto;
-      }
-
-      #main {
-        padding: 1rem;
-      }
-
-      h1, h2 {
-        text-align: center;
-        margin: 0;
-        padding: 0.5rem 0;
-      }
-
-      p {
-        text-align: justify;
-        padding: 0 1rem;
-      }
-
-      #about-us, #cards-container, #page3, #page4, #footer {
-        margin: 2rem 0;
-      }
-
-      #cards-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        background-color: #f8f8f8;
-        border-radius: 8px;
-        text-align: center;
-      }
-
-      .overlay {
-        padding: 1rem;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-      }
-
-      #footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-      }
-
-      #footer h4 {
-        margin: 1rem 0;
-      }
-
-      /* Mobile-specific adjustments */
-      @media (max-width: 768px) {
-        #nav {
-          font-size: 1rem;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-
-        h2 {
-          font-size: 1.5rem;
-        }
-
-        #cards-container {
-          gap: 2rem;
-        }
-
-        .card {
-          padding: 1rem;
-        }
-
-        p {
-          padding: 0.5rem;
-        }
-      }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-    <link rel="shortcut icon" href="https://sidcupfamilygolf.com/wp-content/themes/puttosaurus/favicons/favicon-32x32.png" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://sidcupfamilygolf.com/wp-content/themes/puttosaurus/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div id="nav">
-      <img src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/SeaviewLogo.png" alt="Sea View Logo" />
+      <img
+        src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/SeaviewLogo.png"
+        alt=""
+      />
       <h4>Sea View Range</h4>
       <h4>Golf Lessons</h4>
       <h4>Golf Shop</h4>
       <h4>Weddings</h4>
       <h4>Contact</h4>
     </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
 
-    <video autoplay loop muted src="SIDCUP Family-Golf.mp4"></video>
-
+    <video
+      autoplay
+      loop
+      muted
+      src="SIDCUP Family-Golf.mp4"
+    ></video>
     <div id="main">
       <div id="page1">
         <h1>EAT. DRINK. PLAY.</h1>
         <h2>WELCOME TO SEA VIEW GOLF!</h2>
         <p>
-          Sea View Golf is set on 670 acres of Galloway, NJ, coast and woodlands. Seaview is home to two world-class golf courses and a 296-room hotel. The Bay Course opened in 1914 and was designed by Hugh Wilson and Donald Ross. The 6,300-yard layout is more a test of imagination and accuracy than length. It presents a Scottish-links feel with dramatic seaside views, deep pot bunkers, and small undulating greens.
+
+          Sea View Golf is Set on 670 acres of Galloway, NJ, coast and woodlands,
+          Seaview is home to two world class golf courses and a 296-room hotel.
+          The Bay Course opened in 1914 and was designed by Hugh Wilson and Donald Ross.
+          The 6,300-yard layout is less a test of length, and more a test of imagination,
+          accuracy and short game. The Bay Course presents a Scottish-links feel, dramatic
+          seaside views, deep pot bunkers and small undulating greens. It is the current
+          host of the ShopRite LPGA Classic, as well as nine holes in the 1942 PGA Championship.
         </p>
+        <div id="arrow">
+          <i class="ri-arrow-down-line"></i>
+        </div>
       </div>
-
-      <div id="cards-container">
-        <div class="card">
-          <div class="overlay">
-            <h4>SEA VIEW RANGE</h4>
-            <p>
-              Sea View Golf Range offers a scenic and relaxing experience for golf enthusiasts. Perfect for both beginners and experienced golfers.
-            </p>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>Sea View Range</h4>
+            <h4>Golf Lessons</h4>
+            <h4>Golf Shop</h4>
+            <h4>Weddings</h4>
+            <h4>Contact</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>Sea View Range</h4>
+            <h4>Golf Lessons</h4>
+            <h4>Golf Shop</h4>
+            <h4>Weddings</h4>
+            <h4>Contact</h4>
           </div>
         </div>
-        <div class="card">
-          <div class="overlay">
-            <h4>EAT & DRINK</h4>
+        <div id="about-us">
+          <img
+            src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/home-main-5.jpg?w=960"
+            alt=""
+          />
+          <div id="about-us-in">
+            <h3>ABOUT US</h3>
             <p>
-              Eat and Drink Specials at Sea View Golf Range offer delicious options to complement your day on the green.
+              Home to a 46-bay, multi-tier, floodlit driving range, powered by
+              Toptracer Range technology. Complimented by a practice green and
+              bunker, coffee shop and American Golf Store. There truly is
+              something for everyone as we also boast two outdoor 18-hole
+              dinosaur themed crazy golf courses.
             </p>
+          </div>
+          <img
+            src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/signup-home1-1.jpg?w=900"
+            alt=""
+          />
+        </div>
+        <div id="cards-container">
+          <div class="card" id="card1">
+            <div class="overlay">
+              <h4>SEA VIEW RANGE</h4>
+              <p>
+                Sea View Golf Range in New Jersey offers a scenic and relaxing
+                experience for golf enthusiasts. Situated with a beautiful view
+                of the water, it’s perfect for both beginners and experienced
+                golfers who want to practice their swing or enjoy a day out in nature.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="overlay">
+              <h4>EAT & DRINK</h4>
+              <p>
+                Eat and Drink Specials at Sea View Golf Range offer a variety of
+                delicious options to complement your day on the green. The on-site
+                café provides golfers with a selection of snacks, sandwiches, and
+                light meals, perfect for a quick bite before or after your session.  
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="overlay">
+              <h4>WEDDINGS</h4>
+              <p>
+                Weddings at Sea View Golf Range offer a picturesque and intimate
+                setting for your special day. Nestled in the beautiful New Jersey
+                landscape, the venue provides a stunning backdrop of rolling greens
+                and scenic views, perfect for wedding ceremonies and receptions alike.  
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="overlay">
-            <h4>WEDDINGS</h4>
-            <p>
-              Weddings at Sea View Golf Range offer a picturesque and intimate setting for your special day.
-            </p>
-          </div>
+        <div id="green-div">
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+          <h4>
+            SIGN UP FOR SEA VIEW GOLF NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+          </h4>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="page3">
+        <p>
+          Excellent couple of hours, relax and enjoy in the fun. Staff were
+          accommodating, friendly and very helpful. Café on site for
+          refreshments etc. Will keep children entertained during the holidays.
+          Worth a visit if you haven’t been.
+        </p>
+        <img
+          id="colon1"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+          alt=""
+        />
+        <img
+          id="colon2"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+          alt=""
+        />
+      </div>
+      <div id="page4">
+        <h1>WHAT ARE YOU WAITING FOR?</h1>
+        <div class="elem">
+          <h2>SEA VIEW RANGE</h2>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+            alt=""
+          />
+        </div>
+        <div class="elem">
+          <h2>EAT & DRINK</h2>
+          <img
+            src="https://i.imgur.com/pnzxOkn.jpeg?strip=all&lossy=1&sharp=1&ssl=1"
+            alt=""
+          />
+        </div>
+        <div class="elem">
+          <h2>WEDDINGS</h2>
+          <img
+            src="https://i.imgur.com/daSzgAO.jpeg?strip=all&lossy=1&sharp=1&ssl=1"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="footer">
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+          alt=""
+        />
+        <div id="f1">
+          <img
+            src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/SeaviewLogo.png"
+            alt=""
+          />
+        </div>
+        <div id="f2">
+          <h3>Sea View Range</h3>
+          <h3>Golf Lessons</h3>
+          <h3>Weddings</h3>
+        </div>
+        <div id="f3">
+          <h3>Golf Shop</h3>
+          <h3>Events</h3>
+          <h3>Contact</h3>
+        </div>
+        <div id="f4">
+          <h4>
+            401 SOUTH NEW YORK ROAD<br />
+            GALLOWAY, NJ 08205<br />
+          </h4>
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div id="f1">
-        <img src="https://www.seaviewgolf.com/wp-content/uploads/sites/8871/2023/05/SeaviewLogo.png" alt="Sea View Logo" />
-      </div>
-      <div id="f2">
-        <h3>Sea View Range</h3>
-        <h3>Golf Lessons</h3>
-        <h3>Weddings</h3>
-      </div>
-      <div id="f3">
-        <h3>Golf Shop</h3>
-        <h3>Events</h3>
-        <h3>Contact</h3>
-      </div>
-      <div id="f4">
-        <h4>401 SOUTH NEW YORK ROAD<br />GALLOWAY, NJ 08205</h4>
-      </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+      integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
